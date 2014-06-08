@@ -49,7 +49,7 @@ public class GamePanel extends JPanel {
 		leo = new JLabel();
 		leo.setSize(leoSize, leoSize);
 		leo.setLocation(leoX, leoY);
-		ImageIcon leoIcon = new ImageIcon("leo2.jpg");
+		ImageIcon leoIcon = new ImageIcon("img//leo2.jpg");
 		leo.setIcon(leoIcon);
 		leo.setOpaque(true);
 		leo.setVisible(true);
@@ -60,7 +60,7 @@ public class GamePanel extends JPanel {
 		oscar = new JLabel();
 		oscar.setSize(oscarSize, oscarSize);
 		oscar.setLocation(randGen.nextInt(780), 0);
-		ImageIcon oscarIcon = new ImageIcon("oscars.jpg");
+		ImageIcon oscarIcon = new ImageIcon("img//oscars.jpg");
 		oscar.setIcon(oscarIcon);
 		oscar.setOpaque(true);
 		oscar.setVisible(true);
@@ -80,7 +80,7 @@ public class GamePanel extends JPanel {
 		oscarWin = new JLabel();
 		oscarWin.setSize(500, 213);
 		oscarWin.setLocation(150, 150);
-		ImageIcon oscarWinIcon = new ImageIcon("leooscar.gif");
+		ImageIcon oscarWinIcon = new ImageIcon("img//leooscar.gif");
 		oscarWin.setIcon(oscarWinIcon);
 		oscarWin.setOpaque(true);
 		oscarWin.setVisible(false);
@@ -90,7 +90,7 @@ public class GamePanel extends JPanel {
 		oscarLose = new JLabel();
 		oscarLose.setSize(500, 252);
 		oscarLose.setLocation(150, 150);
-		ImageIcon oscarLoseIcon = new ImageIcon("leocrying.gif");
+		ImageIcon oscarLoseIcon = new ImageIcon("img//leocrying.gif");
 		oscarLose.setIcon(oscarLoseIcon);
 		oscarLose.setOpaque(true);
 		oscarLose.setVisible(false);
@@ -111,7 +111,7 @@ public class GamePanel extends JPanel {
 
 	// draw background
 	public void paintComponent(Graphics g) {
-		Image background = new ImageIcon("hollywood.jpg").getImage();
+		Image background = new ImageIcon("img//hollywood.jpg").getImage();
 		g.drawImage(background, 0, 0, this);
 	}
 
@@ -200,7 +200,7 @@ public class GamePanel extends JPanel {
 
 	// set background music
 	public void playSound() {
-		String file = "Titanic Theme Song.wav";
+		String file = "img//Titanic Theme Song.wav";
 		File soundFile;
 		Clip clip;
 		AudioInputStream audioIn;
